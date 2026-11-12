@@ -28,7 +28,7 @@ export function SliderField({
     <div className="space-y-2">
       <div className="flex items-baseline justify-between">
         <label className="label">{label}</label>
-        <span className="font-mono text-sm font-semibold tabular-nums text-juno-600 dark:text-juno-400">
+        <span className="font-mono text-sm font-semibold tabular-nums text-juno-700 dark:text-juno-400">
           {format ? format(value) : value}
           {unit ? ` ${unit}` : ""}
         </span>

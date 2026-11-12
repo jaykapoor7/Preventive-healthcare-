@@ -13,22 +13,22 @@ const tierStyle: Record<
   monitor: {
     ring: "border-juno-400/30",
     bar: "bg-juno-400",
-    chip: "bg-juno-500/10 text-juno-600 dark:text-juno-400",
+    chip: "bg-juno-500/10 text-juno-700 dark:text-juno-400",
   },
   primary: {
     ring: "border-sky-400/30",
     bar: "bg-sky-400",
-    chip: "bg-sky-500/10 text-sky-600 dark:text-sky-400",
+    chip: "bg-sky-500/10 text-sky-700 dark:text-sky-400",
   },
   urgent: {
     ring: "border-amber-400/30",
     bar: "bg-amber-400",
-    chip: "bg-amber-500/10 text-amber-600 dark:text-amber-400",
+    chip: "bg-amber-500/10 text-amber-700 dark:text-amber-400",
   },
   emergency: {
     ring: "border-rose-400/40",
     bar: "bg-rose-500",
-    chip: "bg-rose-500/10 text-rose-600 dark:text-rose-400",
+    chip: "bg-rose-500/10 text-rose-700 dark:text-rose-400",
   },
 };
 
@@ -109,7 +109,7 @@ export function CareCompass() {
                 )}
               >
                 {isTop && (
-                  <span className="absolute right-4 top-4 rounded-full bg-juno-500/15 px-2.5 py-1 text-[10px] font-semibold uppercase tracking-wide text-juno-600 dark:text-juno-400">
+                  <span className="absolute right-4 top-4 rounded-full bg-juno-500/15 px-2.5 py-1 text-[10px] font-semibold uppercase tracking-wide text-juno-700 dark:text-juno-400">
                     Most emphasis
                   </span>
                 )}
@@ -160,8 +160,8 @@ export function CareCompass() {
       {!result.empty && (
         <div className="rounded-2xl border border-border bg-muted/30 px-5 py-4 text-sm text-muted-foreground">
           <span className="font-semibold text-foreground">Uncertainty is normal.</span>{" "}
-          These bands show where people <em>often</em> consider care — not a
-          decision about you. When unsure, a clinician or helpline can guide the
+          These bands show where people <em>often</em> consider care. They are
+          not a decision about you. When unsure, a clinician or helpline can guide the
           next step.
         </div>
       )}

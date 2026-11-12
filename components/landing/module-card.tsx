@@ -7,10 +7,10 @@ import { type ModuleMeta } from "@/lib/site";
 import { cn } from "@/lib/utils";
 
 const accentMap: Record<ModuleMeta["accent"], string> = {
-  juno: "from-juno-500/15 to-juno-500/0 text-juno-600 dark:text-juno-400",
+  juno: "from-juno-500/15 to-juno-500/0 text-juno-700 dark:text-juno-400",
   warm: "from-warm/15 to-warm/0 text-warm",
-  sky: "from-sky-500/15 to-sky-500/0 text-sky-600 dark:text-sky-400",
-  violet: "from-violet-500/15 to-violet-500/0 text-violet-600 dark:text-violet-400",
+  sky: "from-sky-500/15 to-sky-500/0 text-sky-700 dark:text-sky-400",
+  violet: "from-violet-500/15 to-violet-500/0 text-violet-700 dark:text-violet-400",
 };
 
 export function ModuleCard({ module }: { module: ModuleMeta }) {
@@ -47,7 +47,7 @@ export function ModuleCard({ module }: { module: ModuleMeta }) {
         <h3 className="relative mt-5 text-lg font-semibold tracking-tight">
           {module.name}
         </h3>
-        <p className="relative mt-1 text-sm font-medium text-juno-600 dark:text-juno-400">
+        <p className="relative mt-1 text-sm font-medium text-juno-700 dark:text-juno-400">
           {module.tagline}
         </p>
         <p className="relative mt-3 flex-1 text-sm leading-relaxed text-muted-foreground">

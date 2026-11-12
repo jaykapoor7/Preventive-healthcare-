@@ -24,7 +24,7 @@ export function PrescriptionTranslator() {
           </h2>
           <button
             onClick={() => setText(SAMPLE)}
-            className="text-xs font-medium text-juno-600 hover:underline dark:text-juno-400"
+            className="text-xs font-medium text-juno-700 hover:underline dark:text-juno-400"
           >
             Try a sample
           </button>
@@ -37,7 +37,7 @@ export function PrescriptionTranslator() {
           className="field mt-4 resize-none font-mono text-sm leading-relaxed"
         />
         <p className="mt-3 text-xs leading-relaxed text-muted-foreground">
-          JUNO decodes the <em>language</em> of the note — it never infers a
+          JUNO decodes the <em>language</em> of the note. It never infers a
           diagnosis or suggests changing any medicine.
         </p>
         {text && (
@@ -101,7 +101,7 @@ export function PrescriptionTranslator() {
                         key={d.term}
                         className="flex items-center gap-3 rounded-2xl border border-border bg-muted/30 px-4 py-3"
                       >
-                        <span className="grid h-9 min-w-9 place-items-center rounded-lg bg-juno-500/10 px-2 font-mono text-xs font-semibold text-juno-600 dark:text-juno-400">
+                        <span className="grid h-9 min-w-9 place-items-center rounded-lg bg-juno-500/10 px-2 font-mono text-xs font-semibold text-juno-700 dark:text-juno-400">
                           {d.term}
                         </span>
                         <span className="text-sm">{d.plain}</span>
@@ -127,7 +127,7 @@ export function PrescriptionTranslator() {
                     ))}
                   </div>
                   <p className="mt-3 text-xs text-muted-foreground">
-                    These describe what words mean — not what condition you have.
+                    These describe what words mean, not what condition you have.
                   </p>
                 </div>
               )}
@@ -138,7 +138,7 @@ export function PrescriptionTranslator() {
                 <ol className="mt-4 space-y-2.5">
                   {result.questions.map((q, i) => (
                     <li key={i} className="flex gap-3 text-sm leading-relaxed">
-                      <span className="grid h-6 w-6 shrink-0 place-items-center rounded-full bg-juno-500/15 font-mono text-xs font-semibold text-juno-600 dark:text-juno-400">
+                      <span className="grid h-6 w-6 shrink-0 place-items-center rounded-full bg-juno-500/15 font-mono text-xs font-semibold text-juno-700 dark:text-juno-400">
                         {i + 1}
                       </span>
                       <span>{q}</span>
@@ -172,7 +172,7 @@ function SectionTitle({
   const I = Icons[icon];
   return (
     <div className="flex items-center gap-2.5">
-      <span className="grid h-8 w-8 place-items-center rounded-xl bg-juno-500/10 text-juno-600 dark:text-juno-400">
+      <span className="grid h-8 w-8 place-items-center rounded-xl bg-juno-500/10 text-juno-700 dark:text-juno-400">
         <I width={16} height={16} />
       </span>
       <h3 className={cn("text-base font-semibold tracking-tight")}>{title}</h3>

@@ -18,22 +18,14 @@ export default function HomePage() {
       {/* Trust / what JUNO is not */}
       <section className="container-content mt-8">
         <Reveal>
-          <div className="surface-muted flex flex-col gap-4 p-6 md:flex-row md:items-center md:justify-between">
-            <p className="max-w-2xl text-sm leading-relaxed text-muted-foreground">
+          <div className="surface-muted p-6">
+            <p className="max-w-3xl text-sm leading-relaxed text-muted-foreground">
               <span className="font-semibold text-foreground">
-                JUNO is not diagnosis, treatment, or emergency advice.
+                JUNO is not diagnosis, treatment or emergency advice.
               </span>{" "}
-              It exists to improve patient literacy, prevention awareness, and
-              healthcare navigation — and never replaces your clinician.
+              It explains health information and care options in plain
+              language. It does not replace your clinician.
             </p>
-            <div className="flex flex-wrap gap-2">
-              {["Literacy", "Prevention", "Navigation"].map((t) => (
-                <span key={t} className="pill">
-                  <Icons.check width={14} height={14} className="text-juno-500" />
-                  {t}
-                </span>
-              ))}
-            </div>
           </div>
         </Reveal>
       </section>
@@ -43,14 +35,14 @@ export default function HomePage() {
         <SectionHeading
           eyebrow="Why prevention matters"
           title="The most important healthcare happens before you’re a patient"
-          description="Half of what shapes our health is decided long before a hospital is involved. JUNO works in that quiet, invisible window — while there’s still time to act."
+          description="Half of what shapes our health is decided long before a hospital is involved. JUNO focuses on that stage, while there’s still time to act."
         />
 
         <Stagger className="mt-12 grid gap-5 md:grid-cols-3">
           {whyPrevention.map((item) => (
             <StaggerItem key={item.title}>
               <div className="surface h-full p-7">
-                <div className="grid h-11 w-11 place-items-center rounded-2xl bg-juno-500/10 text-juno-600 dark:text-juno-400">
+                <div className="grid h-11 w-11 place-items-center rounded-2xl bg-juno-500/10 text-juno-700 dark:text-juno-400">
                   <Icons.heart width={20} height={20} />
                 </div>
                 <h3 className="mt-5 text-lg font-semibold tracking-tight">
@@ -85,8 +77,8 @@ export default function HomePage() {
         <div className="grid gap-10 lg:grid-cols-[1fr_1.1fr] lg:items-center">
           <SectionHeading
             eyebrow="The patient literacy gap"
-            title="Information isn’t the problem. Understanding is."
-            description="People can hold a prescription, a discharge note, and a search engine — and still not know what any of it means for the next 48 hours. JUNO closes that distance."
+            title="Having health information is not the same as understanding it"
+            description="Someone can have a prescription, a discharge note and a search engine, and still not know what any of it means for the next 48 hours. JUNO’s tools are built for that gap."
           />
           <LiteracyGap />
         </div>
@@ -96,8 +88,8 @@ export default function HomePage() {
       <section className="container-content mt-28">
         <SectionHeading
           eyebrow="Interactive modules"
-          title="Seven calm tools for understanding your health"
-          description="Each module turns something invisible — a habit, a prescription, a worry, a statistic — into something you can see and act on."
+          title="Seven tools for understanding your health"
+          description="Each one takes something easy to ignore or hard to read, such as a habit, a prescription or a statistic, and makes it clear enough to act on."
         />
         <div className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
           {modules.map((m) => (
@@ -111,12 +103,12 @@ export default function HomePage() {
         <div className="flex items-end justify-between gap-4">
           <SectionHeading
             eyebrow="Research"
-            title="Notes from the prevention frontier"
-            description="Articles, public-health notes, and field observations behind the product."
+            title="Research notes"
+            description="Articles, public-health notes and field observations behind the tools."
           />
           <Link
             href="/research"
-            className="hidden shrink-0 items-center gap-1.5 text-sm font-medium text-foreground hover:text-juno-600 md:inline-flex dark:hover:text-juno-400"
+            className="hidden shrink-0 items-center gap-1.5 text-sm font-medium text-foreground hover:text-juno-700 dark:hover:text-juno-400 md:inline-flex"
           >
             All research
             <Icons.arrowRight width={16} height={16} />
@@ -140,7 +132,7 @@ export default function HomePage() {
                 <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
                   {r.summary}
                 </p>
-                <span className="mt-5 inline-flex items-center gap-1.5 text-sm font-medium text-juno-600 dark:text-juno-400">
+                <span className="mt-5 inline-flex items-center gap-1.5 text-sm font-medium text-juno-700 dark:text-juno-400">
                   Read note
                   <Icons.arrowRight
                     width={16}
@@ -157,15 +149,14 @@ export default function HomePage() {
       {/* CTA */}
       <section className="container-content mt-28">
         <Reveal>
-          <div className="relative overflow-hidden rounded-4xl border border-border bg-gradient-to-br from-juno-500/10 via-card to-warm/10 p-10 text-center md:p-16">
-            <div className="pointer-events-none absolute inset-0 bg-grid-fade [background-size:24px_24px] opacity-30" />
-            <div className="relative mx-auto max-w-2xl">
+          <div className="rounded-4xl border border-border bg-card px-6 py-10 text-center sm:p-10 md:p-16 dark:bg-gradient-to-br dark:from-juno-500/10 dark:via-card dark:to-warm/10">
+            <div className="mx-auto max-w-2xl">
               <h2 className="text-balance text-3xl font-semibold tracking-tight md:text-5xl">
-                Meet the version of yourself prevention is trying to protect.
+                Start with one tool.
               </h2>
               <p className="mt-4 text-pretty text-muted-foreground md:text-lg">
-                Start with one module. No account, no diagnosis — just a clearer
-                picture of your health.
+                No account and no diagnosis, just a clearer picture of your
+                health.
               </p>
               <div className="mt-8 flex flex-col items-center justify-center gap-3 sm:flex-row">
                 <Link

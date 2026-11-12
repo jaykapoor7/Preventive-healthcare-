@@ -17,8 +17,8 @@ export default function Page() {
       disclaimer={
         <>
           <span className="font-semibold text-foreground">General, not personal.</span>{" "}
-          This timeline shows population-level awareness moments for education —
-          not an individual medical schedule. Confirm what’s right for you with
+          This timeline shows population-level awareness moments for education.
+          It is not an individual medical schedule. Confirm what’s right for you with
           your clinician.
         </>
       }

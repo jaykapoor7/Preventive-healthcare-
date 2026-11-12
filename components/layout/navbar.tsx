@@ -65,7 +65,7 @@ export function Navbar() {
         <div className="flex items-center gap-2">
           <ThemeToggle />
           <Link href="/modules" className="btn-primary hidden md:inline-flex">
-            Start Exploring
+            Try the tools
             <Icons.arrowRight width={16} height={16} />
           </Link>
           <button
@@ -106,7 +106,7 @@ export function Navbar() {
                 </Link>
               ))}
               <Link href="/modules" className="btn-primary mt-2 w-full">
-                Start Exploring
+                Try the tools
                 <Icons.arrowRight width={16} height={16} />
               </Link>
             </div>

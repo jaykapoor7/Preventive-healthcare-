@@ -7,7 +7,7 @@ import { modules } from "@/lib/site";
 export const metadata: Metadata = {
   title: "Modules",
   description:
-    "Seven calm, interactive tools for understanding your health before treatment — prevention, literacy, and navigation.",
+    "Seven interactive tools for understanding your health before you need treatment.",
 };
 
 export default function ModulesPage() {
@@ -16,7 +16,7 @@ export default function ModulesPage() {
       <SectionHeading
         eyebrow="Interactive modules"
         title="Seven ways to understand your health"
-        description="Each tool turns something invisible — a habit, a prescription, a worry, a statistic — into something calm and legible. Nothing here is diagnosis."
+        description="Each one takes something easy to ignore or hard to read, such as a habit, a prescription or a statistic, and makes it clear. None of them diagnose."
       />
 
       <div className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">

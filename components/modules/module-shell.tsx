@@ -25,7 +25,7 @@ export function ModuleShell({
 
       <Reveal className="mt-6">
         <div className="flex items-baseline gap-3">
-          <span className="font-mono text-sm text-juno-600 dark:text-juno-400">
+          <span className="font-mono text-sm text-juno-700 dark:text-juno-400">
             {module.number}
           </span>
           <p className="text-sm font-medium text-muted-foreground">

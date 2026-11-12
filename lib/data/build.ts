@@ -14,11 +14,11 @@ export const roadmap: RoadmapItem[] = [
       "My Future Patient, Health Receipt, Prescription Translator, Care Compass, Literacy Checker, Preventive Timeline, and Preventability Map.",
   },
   {
-    title: "Dark + light cinematic design system",
+    title: "Light and dark themes",
     status: "shipped",
     quarter: "2026 · Q2",
     description:
-      "A calm, warm, accessible token system shared across every screen and chart.",
+      "One set of colour and type tokens shared by every screen and chart.",
   },
   {
     title: "Multilingual plain-language layer",
@@ -67,7 +67,7 @@ export const roadmap: RoadmapItem[] = [
 export const experiments = [
   {
     title: "Receipt as a shareable card",
-    note: "Testing whether a beautiful monthly receipt nudges gentle, repeatable habits.",
+    note: "Testing whether a shareable monthly receipt encourages repeatable habits.",
   },
   {
     title: "Uncertainty-first navigation",

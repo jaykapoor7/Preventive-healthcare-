@@ -10,8 +10,8 @@ export function Footer() {
           <div className="max-w-sm">
             <Logo />
             <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
-              {site.tagline} JUNO helps people understand healthcare before
-              becoming patients — built for India.
+              {site.tagline} JUNO helps people in India understand their
+              health before they become patients.
             </p>
           </div>
 
@@ -54,14 +54,13 @@ export function Footer() {
 
         <div className="mt-12 rounded-2xl border border-border bg-card/60 p-5">
           <p className="text-xs leading-relaxed text-muted-foreground">
-            <span className="font-semibold text-foreground">Important — </span>
+            <span className="font-semibold text-foreground">Important: </span>
             {disclaimer}
           </p>
         </div>
 
-        <div className="mt-8 flex flex-col items-start justify-between gap-4 text-xs text-muted-foreground sm:flex-row sm:items-center">
-          <p>© {new Date().getFullYear()} JUNO. An educational prevention &amp; literacy project.</p>
-          <p>Made with care for prevention-first healthcare.</p>
+        <div className="mt-8 text-xs text-muted-foreground">
+          <p>© {new Date().getFullYear()} JUNO. An educational prevention and literacy project.</p>
         </div>
       </div>
     </footer>

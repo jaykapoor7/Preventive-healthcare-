@@ -1,8 +1,8 @@
 /**
  * A tile-grid cartogram of India. Positions are stylised (not geographically
- * exact) so the map reads as calm visual storytelling rather than a precise
+ * exact) so the map reads as visual storytelling rather than a precise
  * atlas. The metrics below are ILLUSTRATIVE composites for an educational
- * product demo — they are not official statistics and should not be cited.
+ * product demo. They are not official statistics and should not be cited.
  */
 
 export type StateMetric = {
@@ -28,8 +28,8 @@ export const indiaStates: StateMetric[] = [
   { id: "RJ", name: "Rajasthan", short: "RJ", row: 2, col: 0, literacy: 63, preventive: 56, awareness: 60, note: "Vast rural spread; mobile prevention drives matter most." },
   { id: "HR", name: "Haryana", short: "HR", row: 2, col: 1, literacy: 72, preventive: 65, awareness: 68, note: "Urban clusters lift average preventive engagement." },
   { id: "DL", name: "Delhi", short: "DL", row: 2, col: 2, literacy: 84, preventive: 79, awareness: 82, note: "Dense access, yet navigation confidence still varies widely." },
-  { id: "UP", name: "Uttar Pradesh", short: "UP", row: 2, col: 3, literacy: 61, preventive: 53, awareness: 57, note: "Largest population — small literacy gains scale enormously." },
-  { id: "BR", name: "Bihar", short: "BR", row: 2, col: 4, literacy: 58, preventive: 50, awareness: 54, note: "High-leverage region for patient-literacy investment." },
+  { id: "UP", name: "Uttar Pradesh", short: "UP", row: 2, col: 3, literacy: 61, preventive: 53, awareness: 57, note: "Largest population: small literacy gains reach very large numbers of people." },
+  { id: "BR", name: "Bihar", short: "BR", row: 2, col: 4, literacy: 58, preventive: 50, awareness: 54, note: "A region where patient-literacy work could have a large effect." },
   { id: "AS", name: "Assam", short: "AS", row: 2, col: 6, literacy: 69, preventive: 60, awareness: 64, note: "River geography influences seasonal access to care." },
   { id: "NL", name: "Nagaland", short: "NL", row: 2, col: 7, literacy: 70, preventive: 61, awareness: 65, note: "Community networks are strong channels for awareness." },
   { id: "GJ", name: "Gujarat", short: "GJ", row: 3, col: 0, literacy: 74, preventive: 68, awareness: 71, note: "Established preventive-care programmes in many districts." },
@@ -48,7 +48,7 @@ export const indiaStates: StateMetric[] = [
   { id: "AP", name: "Andhra Pradesh", short: "AP", row: 5, col: 4, literacy: 70, preventive: 63, awareness: 66, note: "Statewide health schemes shape preventive habits." },
   { id: "KA", name: "Karnataka", short: "KA", row: 6, col: 2, literacy: 77, preventive: 71, awareness: 74, note: "Bengaluru lifts averages; rural gaps remain." },
   { id: "KL", name: "Kerala", short: "KL", row: 7, col: 2, literacy: 92, preventive: 86, awareness: 89, note: "A reference point for health literacy in India." },
-  { id: "TN", name: "Tamil Nadu", short: "TN", row: 7, col: 3, literacy: 81, preventive: 76, awareness: 78, note: "Robust public-health system with deep reach." },
+  { id: "TN", name: "Tamil Nadu", short: "TN", row: 7, col: 3, literacy: 81, preventive: 76, awareness: 78, note: "Strong public-health system with wide reach." },
 ];
 
 export type MapMetricKey = "literacy" | "preventive" | "awareness";
@@ -62,7 +62,7 @@ export const mapMetrics: { key: MapMetricKey; label: string; description: string
 export const indiaInsights = [
   {
     title: "Literacy compounds",
-    body: "States with higher health literacy tend to show steadier preventive engagement — understanding precedes action.",
+    body: "States with higher health literacy tend to show steadier preventive engagement. Understanding comes before action.",
   },
   {
     title: "Access ≠ confidence",

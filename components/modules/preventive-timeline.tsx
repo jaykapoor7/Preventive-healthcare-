@@ -37,7 +37,7 @@ export function PreventiveTimeline() {
                   className={cn(
                     "grid h-10 w-10 place-items-center rounded-full border-2 bg-card font-mono text-xs font-semibold transition-all",
                     isActive
-                      ? "scale-110 border-juno-500 text-juno-600 shadow-lg shadow-juno-500/20 dark:text-juno-400"
+                      ? "scale-110 border-juno-500 text-juno-700 shadow-md dark:text-juno-400"
                       : isPast
                       ? "border-juno-400/50 text-foreground"
                       : "border-border text-muted-foreground"
@@ -70,7 +70,6 @@ export function PreventiveTimeline() {
           className="grid gap-6 lg:grid-cols-[1fr_1.4fr]"
         >
           <div className="surface relative overflow-hidden p-8">
-            <div className="pointer-events-none absolute -right-12 -top-12 h-40 w-40 rounded-full bg-juno-500/10 blur-2xl" />
             <p className="font-mono text-6xl font-bold tracking-tight text-gradient">
               {stage.age}
             </p>
@@ -98,7 +97,7 @@ export function PreventiveTimeline() {
                   transition={{ delay: 0.1 + i * 0.08 }}
                   className="flex gap-3"
                 >
-                  <span className="mt-0.5 grid h-7 w-7 shrink-0 place-items-center rounded-full bg-juno-500/15 text-juno-600 dark:text-juno-400">
+                  <span className="mt-0.5 grid h-7 w-7 shrink-0 place-items-center rounded-full bg-juno-500/15 text-juno-700 dark:text-juno-400">
                     <Icons.check width={15} height={15} />
                   </span>
                   <span className="text-sm leading-relaxed">{a}</span>
@@ -106,7 +105,7 @@ export function PreventiveTimeline() {
               ))}
             </ul>
             <div className="mt-6 rounded-2xl border border-border bg-muted/30 px-4 py-3 text-xs text-muted-foreground">
-              These are general, population-level awareness moments — not a
+              These are general, population-level awareness moments, not a
               personal medical schedule. Your clinician sets what’s right for you.
             </div>
           </div>

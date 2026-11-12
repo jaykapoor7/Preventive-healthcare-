@@ -1,7 +1,7 @@
 /**
  * Care Compass is an *educational navigation* aid. It never diagnoses or
  * tells anyone what they have. It explains the kinds of care settings that
- * exist and why people might consider each — and it always keeps uncertainty
+ * exist and why people might consider each, and it always keeps uncertainty
  * visible. Emergency-sounding language pushes emphasis toward urgent/ER
  * *education*, never a verdict.
  */

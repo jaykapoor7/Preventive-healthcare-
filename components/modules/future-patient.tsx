@@ -27,7 +27,7 @@ import { cn } from "@/lib/utils";
 
 const riskColor = {
   watch: "border-warm/40 bg-warm/10 text-warm",
-  build: "border-juno-400/40 bg-juno-500/10 text-juno-600 dark:text-juno-400",
+  build: "border-juno-400/40 bg-juno-500/10 text-juno-700 dark:text-juno-400",
   steady: "border-border bg-muted/40 text-muted-foreground",
 };
 
@@ -140,7 +140,6 @@ export function FuturePatient() {
           animate={{ opacity: revealed ? 1 : 0.55 }}
           className="surface relative overflow-hidden p-7"
         >
-          <div className="pointer-events-none absolute -right-16 -top-16 h-48 w-48 rounded-full bg-juno-500/10 blur-3xl" />
           <div className="flex flex-col items-center gap-8 sm:flex-row sm:items-center sm:justify-between">
             <div>
               <p className="eyebrow">Your projected profile · age {input.age + 10}</p>
@@ -148,7 +147,7 @@ export function FuturePatient() {
                 {result.archetype}
               </h2>
               <p className="mt-2 max-w-sm text-sm leading-relaxed text-muted-foreground">
-                A habit-driven picture — not a prediction. Small changes move
+                A habit-driven picture, not a prediction. Small changes move
                 this profile more than you’d expect.
               </p>
             </div>
@@ -299,7 +298,7 @@ export function FuturePatient() {
                   className="rounded-2xl border border-border bg-muted/30 p-4"
                 >
                   <div className="flex items-start gap-3">
-                    <span className="mt-0.5 grid h-7 w-7 shrink-0 place-items-center rounded-full bg-juno-500/15 text-juno-600 dark:text-juno-400">
+                    <span className="mt-0.5 grid h-7 w-7 shrink-0 place-items-center rounded-full bg-juno-500/15 text-juno-700 dark:text-juno-400">
                       <Icons.check width={15} height={15} />
                     </span>
                     <div>

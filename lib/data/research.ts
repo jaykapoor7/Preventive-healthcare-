@@ -21,7 +21,7 @@ export const research: ResearchEntry[] = [
     tags: ["literacy", "behaviour", "prevention"],
     body: [
       "When we talk about healthcare access in India, we usually mean infrastructure: clinics, doctors, medicines, and increasingly, data connectivity. By those measures, access has improved dramatically.",
-      "But access to information is not the same as understanding it. A person can hold a prescription, a discharge summary, and a search engine — and still not know what any of it means for the next 48 hours of their life.",
+      "But access to information is not the same as understanding it. A person can hold a prescription, a discharge summary and a search engine, and still not know what any of it means for the next 48 hours of their life.",
       "JUNO treats this as the core problem. Not the absence of information, but the absence of confidence, timing, and translation. Prevention only works when people can see the consequences of today in the shape of tomorrow.",
     ],
   },
@@ -36,7 +36,7 @@ export const research: ResearchEntry[] = [
     tags: ["prevention", "design", "feedback"],
     body: [
       "Smoking, poor sleep, and chronic stress rarely produce a same-day penalty. The bill arrives years later, which makes it easy to discount.",
-      "Preventive tools work best when they shorten that loop — when they let people feel a decade of compounding in a single, calm visualisation.",
+      "Preventive tools work best when they shorten that loop and let people see a decade of compounding in a single visualisation.",
       "This is the design intuition behind My Future Patient and Health Receipt: not to frighten, but to make the long arc legible and optimistic.",
     ],
   },
@@ -62,11 +62,11 @@ export const research: ResearchEntry[] = [
     date: "2026-02-08",
     readingTime: "7 min",
     summary:
-      "When instructions are readable, people follow them. Readability is not a nicety — it shapes outcomes.",
+      "When instructions are readable, people follow them. Readability shapes outcomes.",
     tags: ["literacy", "safety", "communication"],
     body: [
       "A discharge note written at a postgraduate reading level is, for many patients, a closed door. Adherence drops not from unwillingness but from genuine misunderstanding.",
-      "The Health Literacy Checker exists to surface this gap quantitatively — reading difficulty, jargon density, and a plainer rewrite — so communication can be improved before it reaches a patient.",
+      "The Health Literacy Checker measures this gap (reading difficulty and jargon density) and offers a plainer rewrite, so communication can be improved before it reaches a patient.",
       "The goal is never to replace the clinician's words, but to make them land.",
     ],
   },

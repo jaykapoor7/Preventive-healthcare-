@@ -12,8 +12,7 @@ export default function NotFound() {
           This page isn’t on the map.
         </h1>
         <p className="mx-auto mt-3 max-w-md text-muted-foreground">
-          The page you’re looking for doesn’t exist — but prevention always has
-          a next step.
+          The page you’re looking for doesn’t exist.
         </p>
         <div className="mt-8 flex flex-col items-center justify-center gap-3 sm:flex-row">
           <Link href="/" className="btn-primary px-6 py-3">
