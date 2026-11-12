@@ -8,7 +8,7 @@ import { cn } from "@/lib/utils";
 export const metadata: Metadata = {
   title: "Build",
   description:
-    "JUNO’s public roadmap — shipped work, what we’re building, what we’re exploring, and ideas for the future.",
+    "JUNO’s public roadmap: what has shipped, what we’re building and what we’re exploring.",
 };
 
 const statusMeta: Record<
@@ -18,7 +18,7 @@ const statusMeta: Record<
   shipped: {
     label: "Shipped",
     dot: "bg-juno-500",
-    chip: "bg-juno-500/10 text-juno-600 dark:text-juno-400",
+    chip: "bg-juno-500/10 text-juno-700 dark:text-juno-400",
   },
   building: {
     label: "Building",
@@ -28,7 +28,7 @@ const statusMeta: Record<
   exploring: {
     label: "Exploring",
     dot: "bg-sky-400",
-    chip: "bg-sky-500/10 text-sky-600 dark:text-sky-400",
+    chip: "bg-sky-500/10 text-sky-700 dark:text-sky-400",
   },
   idea: {
     label: "Idea",
@@ -45,7 +45,7 @@ export default function BuildPage() {
       <SectionHeading
         eyebrow="Public roadmap"
         title="Building JUNO in the open"
-        description="Prevention is iterative. Here’s what we’ve shipped, what we’re building, and the ideas we’re still exploring."
+        description="What we’ve shipped, what we’re building and the ideas we’re still exploring."
       />
 
       {/* Status legend */}
@@ -91,7 +91,7 @@ export default function BuildPage() {
           {experiments.map((e) => (
             <StaggerItem key={e.title}>
               <div className="surface h-full p-6">
-                <span className="grid h-10 w-10 place-items-center rounded-xl bg-juno-500/10 text-juno-600 dark:text-juno-400">
+                <span className="grid h-10 w-10 place-items-center rounded-xl bg-juno-500/10 text-juno-700 dark:text-juno-400">
                   <Icons.spark width={18} height={18} />
                 </span>
                 <h3 className="mt-4 font-semibold tracking-tight">{e.title}</h3>
@@ -106,8 +106,8 @@ export default function BuildPage() {
 
       <Reveal className="mt-16">
         <div className="surface-muted p-6 text-sm leading-relaxed text-muted-foreground">
-          Have an idea for a module or a literacy gap we should close? JUNO is a
-          living project — the roadmap evolves with the people it’s built for.
+          Have an idea for a module or a literacy gap we should close? The
+          roadmap changes as we learn what people need.
         </div>
       </Reveal>
     </div>

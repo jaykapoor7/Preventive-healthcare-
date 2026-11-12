@@ -55,10 +55,10 @@ export function LiteracyChecker() {
 
   const diffColor =
     result.difficulty === "Easy" || result.difficulty === "Plain"
-      ? "text-juno-600 dark:text-juno-400 bg-juno-500/10"
+      ? "text-juno-700 dark:text-juno-400 bg-juno-500/10"
       : result.difficulty === "Fairly hard"
-      ? "text-amber-600 dark:text-amber-400 bg-amber-500/10"
-      : "text-rose-600 dark:text-rose-400 bg-rose-500/10";
+      ? "text-amber-700 dark:text-amber-400 bg-amber-500/10"
+      : "text-rose-700 dark:text-rose-400 bg-rose-500/10";
 
   return (
     <div className="grid gap-8 lg:grid-cols-[minmax(0,420px)_1fr]">
@@ -69,7 +69,7 @@ export function LiteracyChecker() {
           </h2>
           <button
             onClick={() => setText(SAMPLE)}
-            className="text-xs font-medium text-juno-600 hover:underline dark:text-juno-400"
+            className="text-xs font-medium text-juno-700 hover:underline dark:text-juno-400"
           >
             Try a sample
           </button>
@@ -121,7 +121,7 @@ export function LiteracyChecker() {
                   </div>
                   <p className="mt-3 max-w-xs text-sm leading-relaxed text-muted-foreground">
                     A friendliness score blends reading ease, jargon, and
-                    sentence length — higher is easier for patients.
+                    sentence length. Higher is easier for patients.
                   </p>
                 </div>
                 <StatRing value={result.friendliness} size={130} sublabel="Friendliness" />

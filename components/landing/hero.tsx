@@ -34,41 +34,29 @@ export function Hero() {
 
   return (
     <section className="relative overflow-hidden">
-      {/* Ambient gradient field */}
-      <div className="pointer-events-none absolute inset-0 -z-10">
-        <div className="absolute left-1/2 top-[-10%] h-[480px] w-[820px] -translate-x-1/2 rounded-full bg-juno-500/20 blur-[120px]" />
-        <div className="absolute right-[10%] top-[30%] h-[280px] w-[280px] rounded-full bg-warm/20 blur-[100px]" />
-        <div className="absolute inset-0 bg-grid-fade [background-size:26px_26px] opacity-40 mask-fade-b" />
-      </div>
-
-      <div className="container-content pb-10 pt-20 md:pt-28">
+      <div className="container-content pb-10 pt-16 md:pt-24">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
           className="mx-auto max-w-3xl text-center"
         >
-          <span className="pill mx-auto mb-6">
-            <span className="h-1.5 w-1.5 rounded-full bg-juno-500 animate-pulse-soft" />
-            Preventive healthcare · Patient literacy · India
-          </span>
+          <p className="eyebrow">Preventive health for India</p>
 
-          <h1 className="text-balance text-6xl font-bold tracking-tight md:text-8xl">
-            JUNO
-          </h1>
-          <p className="mx-auto mt-5 max-w-2xl text-balance text-2xl font-semibold tracking-tight md:text-4xl">
+          <h1 className="mx-auto mt-5 max-w-3xl text-balance text-4xl font-bold tracking-tight sm:text-5xl md:text-7xl">
             Healthcare shouldn’t start{" "}
             <span className="text-gradient">at the hospital.</span>
-          </p>
-          <p className="mx-auto mt-5 max-w-xl text-pretty text-base text-muted-foreground md:text-lg">
-            Understand your health before you need treatment. JUNO makes
-            invisible health consequences visible — and helps you navigate
-            healthcare with confidence.
+          </h1>
+          <p className="mx-auto mt-6 max-w-xl text-pretty text-base leading-relaxed text-muted-foreground md:text-lg">
+            JUNO has seven small tools that explain habits, prescriptions and
+            care options in plain language, so you can understand your health
+            before you need treatment. They run in your browser and need no
+            account.
           </p>
 
           <div className="mt-8 flex flex-col items-center justify-center gap-3 sm:flex-row">
             <Link href="/modules" className="btn-primary px-7 py-3 text-base">
-              Start Exploring
+              Try the tools
               <Icons.arrowRight width={18} height={18} />
             </Link>
             <Link href="/about" className="btn-ghost px-7 py-3 text-base">
@@ -84,7 +72,7 @@ export function Hero() {
           transition={{ duration: 0.8, delay: 0.25 }}
           className="relative mx-auto mt-16 max-w-4xl"
         >
-          <div className="surface overflow-hidden p-2 shadow-2xl shadow-juno-500/5">
+          <div className="surface overflow-hidden p-2 shadow-sm">
             <div className="rounded-[1.4rem] border border-border bg-gradient-to-b from-muted/30 to-transparent p-6">
               <div className="mb-4 flex items-center justify-between px-2">
                 <p className="text-xs font-semibold uppercase tracking-widest text-muted-foreground">

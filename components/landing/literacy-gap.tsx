@@ -11,6 +11,35 @@ import {
 import { motion } from "framer-motion";
 import { literacyGapPoints } from "@/lib/data/landing";
 
+// Splits "Have information" into two lines so every bar keeps its label on
+// narrow screens (Recharts otherwise drops overlapping ticks).
+function TwoLineTick(props: {
+  x?: number;
+  y?: number;
+  payload?: { value: string };
+}) {
+  const { x = 0, y = 0, payload } = props;
+  const [first, ...rest] = (payload?.value ?? "").split(" ");
+  return (
+    <text
+      x={x}
+      y={y}
+      textAnchor="middle"
+      fill="rgb(var(--muted-foreground))"
+      fontSize={12}
+    >
+      <tspan x={x} dy={12}>
+        {first}
+      </tspan>
+      {rest.length > 0 && (
+        <tspan x={x} dy={14}>
+          {rest.join(" ")}
+        </tspan>
+      )}
+    </text>
+  );
+}
+
 export function LiteracyGap() {
   return (
     <div className="surface p-6 md:p-8">
@@ -22,8 +51,8 @@ export function LiteracyGap() {
           </h3>
         </div>
         <p className="max-w-xs text-sm text-muted-foreground">
-          Most people don’t lack information. They lose it on the way to
-          understanding, timing, and confidence.
+          Most people have the information. Far fewer understand it, act on it
+          in time, or feel confident about it.
         </p>
       </div>
 
@@ -31,13 +60,15 @@ export function LiteracyGap() {
         <ResponsiveContainer width="100%" height="100%">
           <BarChart
             data={literacyGapPoints}
-            margin={{ top: 8, right: 0, left: -20, bottom: 0 }}
+            margin={{ top: 8, right: 4, left: 4, bottom: 0 }}
           >
             <XAxis
               dataKey="label"
               tickLine={false}
               axisLine={false}
-              tick={{ fill: "rgb(var(--muted-foreground))", fontSize: 12 }}
+              interval={0}
+              height={40}
+              tick={<TwoLineTick />}
             />
             <YAxis hide domain={[0, 100]} />
             <Bar dataKey="value" radius={[10, 10, 0, 0]} maxBarSize={64}>

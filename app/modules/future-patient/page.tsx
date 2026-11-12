@@ -17,8 +17,8 @@ export default function Page() {
       disclaimer={
         <>
           <span className="font-semibold text-foreground">Education, not prediction.</span>{" "}
-          These scores are illustrative habit-based estimates — not clinical
-          risk, diagnosis, or certainty. Always confirm with your clinician.
+          These scores are illustrative habit-based estimates, not clinical
+          risk, diagnosis or certainty. Always confirm with your clinician.
         </>
       }
     >

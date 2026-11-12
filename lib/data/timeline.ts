@@ -7,7 +7,7 @@ export type TimelineStage = {
 };
 
 /**
- * Educational, population-level awareness moments — NOT an individual medical
+ * Educational, population-level awareness moments, NOT an individual medical
  * schedule. Always frame as "things people often become aware of around this
  * age," and route specifics to a clinician.
  */
@@ -53,7 +53,7 @@ export const preventiveTimeline: TimelineStage[] = [
     title: "Routines",
     theme: "Preventive routines",
     summary:
-      "Prevention becomes a rhythm — regular, unremarkable, and reassuring.",
+      "Prevention becomes a regular, unremarkable and reassuring routine.",
     awareness: [
       "Knowing which preventive checkups are commonly discussed.",
       "Paying attention to recovery, eyesight, and joint health.",

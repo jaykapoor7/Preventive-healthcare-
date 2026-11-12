@@ -8,7 +8,7 @@ import { site } from "@/lib/site";
 export const metadata: Metadata = {
   metadataBase: new URL(site.url),
   title: {
-    default: `${site.name} — ${site.tagline}`,
+    default: `${site.name}: ${site.tagline}`,
     template: `%s · ${site.name}`,
   },
   description: site.description,
@@ -22,7 +22,7 @@ export const metadata: Metadata = {
   ],
   authors: [{ name: "JUNO" }],
   openGraph: {
-    title: `${site.name} — ${site.tagline}`,
+    title: `${site.name}: ${site.tagline}`,
     description: site.description,
     type: "website",
     url: site.url,
@@ -30,16 +30,13 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: `${site.name} — ${site.tagline}`,
+    title: `${site.name}: ${site.tagline}`,
     description: site.description,
   },
 };
 
 export const viewport: Viewport = {
-  themeColor: [
-    { media: "(prefers-color-scheme: light)", color: "#fbfaf8" },
-    { media: "(prefers-color-scheme: dark)", color: "#0a0f0e" },
-  ],
+  themeColor: "#fbfaf8",
 };
 
 export default function RootLayout({
@@ -64,7 +61,7 @@ export default function RootLayout({
       <body className="min-h-screen antialiased">
         <ThemeProvider
           attribute="class"
-          defaultTheme="dark"
+          defaultTheme="light"
           enableSystem
           disableTransitionOnChange
         >

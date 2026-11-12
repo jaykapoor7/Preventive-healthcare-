@@ -30,7 +30,7 @@
     --juno-800: 6 95 78;
     --juno-900: 6 78 64;
 
-    --warm: 244 162 97;
+    --warm: 180 83 9;
     --warm-soft: 250 214 165;
   }
 
@@ -115,7 +115,7 @@
   }
 
   .btn-primary {
-    @apply btn bg-juno-500 text-white shadow-lg shadow-juno-500/20 hover:bg-juno-600 hover:shadow-juno-500/30 dark:text-juno-50;
+    @apply btn bg-juno-700 text-white shadow-sm hover:bg-juno-800 dark:bg-juno-500 dark:text-juno-50 dark:hover:bg-juno-600;
   }
 
   .btn-ghost {
@@ -130,12 +130,13 @@
     @apply w-full rounded-2xl border border-input bg-card px-4 py-3 text-sm text-foreground outline-none transition focus:border-juno-400 focus:ring-2 focus:ring-juno-500/20 placeholder:text-muted-foreground/70;
   }
 
+  /* Solid accent in light mode for contrast; gradient kept for dark mode. */
   .text-gradient {
-    @apply bg-gradient-to-br from-juno-600 via-juno-500 to-warm bg-clip-text text-transparent dark:from-juno-300 dark:via-juno-400 dark:to-warm;
+    @apply text-juno-700 dark:bg-gradient-to-br dark:from-juno-300 dark:via-juno-400 dark:to-warm dark:bg-clip-text dark:text-transparent;
   }
 
   .eyebrow {
-    @apply text-xs font-semibold uppercase tracking-[0.2em] text-juno-600 dark:text-juno-400;
+    @apply text-xs font-semibold uppercase tracking-[0.2em] text-juno-700 dark:text-juno-400;
   }
 }
 

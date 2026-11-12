@@ -17,7 +17,7 @@ function Delta({ value }: { value: number }) {
     <span
       className={cn(
         "font-mono text-xs",
-        positive ? "text-juno-600 dark:text-juno-400" : "text-warm"
+        positive ? "text-juno-700 dark:text-juno-400" : "text-warm"
       )}
     >
       {positive ? "▲" : "▼"} {Math.abs(value)}
@@ -160,7 +160,7 @@ export function HealthReceipt() {
 
               <div className="space-y-3">
                 <div className="rounded-lg bg-juno-500/10 p-3">
-                  <p className="text-[10px] uppercase tracking-widest text-juno-600 dark:text-juno-400">
+                  <p className="text-[10px] uppercase tracking-widest text-juno-700 dark:text-juno-400">
                     Biggest health win
                   </p>
                   <p className="mt-0.5 font-semibold">{result.win.label}</p>

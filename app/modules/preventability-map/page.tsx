@@ -18,7 +18,7 @@ export default function Page() {
         <>
           <span className="font-semibold text-foreground">Illustrative data.</span>{" "}
           The figures shown are composite, illustrative values for an
-          educational demo — not official statistics, and not for citation.
+          educational demo. They are not official statistics and not for citation.
         </>
       }
     >

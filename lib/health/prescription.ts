@@ -121,7 +121,7 @@ export function translatePrescription(text: string): PrescriptionResult {
     interpretation.push(`Duration noted: ${durations.join(", ")}.`);
   if (jargon.length)
     interpretation.push(
-      `Some medical words were simplified above — these describe terms, not a diagnosis.`
+      `Some medical words were simplified above. These describe terms, not a diagnosis.`
     );
   if (!interpretation.length)
     interpretation.push(
@@ -130,7 +130,7 @@ export function translatePrescription(text: string): PrescriptionResult {
 
   const questions = [
     "What is each medicine for, in plain words?",
-    "Exactly when and how should I take it — with food, water, or at a certain time?",
+    "Exactly when and how should I take it: with food, with water, or at a certain time?",
     "What should I do if I miss a dose?",
     "Are there side effects or foods/medicines I should avoid?",
     "How long do I continue, and what changes mean I should call you?",

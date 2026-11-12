@@ -60,7 +60,7 @@ export function PreventabilityMap() {
             className={cn(
               "rounded-full border px-4 py-2 text-sm font-medium transition",
               metric === m.key
-                ? "border-juno-500 bg-juno-500/10 text-juno-600 dark:text-juno-400"
+                ? "border-juno-500 bg-juno-500/10 text-juno-700 dark:text-juno-400"
                 : "border-border bg-card text-muted-foreground hover:text-foreground"
             )}
           >
@@ -125,7 +125,7 @@ export function PreventabilityMap() {
           </div>
           <p className="mt-3 text-[11px] text-muted-foreground">
             Stylised tile cartogram. Figures are illustrative composites for an
-            educational demo — not official statistics.
+            educational demo, not official statistics.
           </p>
         </div>
 

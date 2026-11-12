@@ -3,7 +3,7 @@ import { clamp } from "@/lib/utils";
 /**
  * A small, transparent medical-jargon glossary used to estimate
  * patient-friendliness and to offer plainer phrasings. This is an
- * educational heuristic — not a clinical or diagnostic resource.
+ * educational heuristic, not a clinical or diagnostic resource.
  */
 export const JARGON: Record<string, string> = {
   hypertension: "high blood pressure",

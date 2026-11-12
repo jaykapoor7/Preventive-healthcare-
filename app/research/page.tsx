@@ -8,55 +8,48 @@ import { research } from "@/lib/data/research";
 export const metadata: Metadata = {
   title: "Research",
   description:
-    "Articles, public-health notes, and field observations behind JUNO — a research terminal for prevention and patient literacy.",
+    "Articles, public-health notes and field observations on prevention and patient literacy.",
 };
 
 export default function ResearchPage() {
   return (
     <div className="container-content py-16">
       <SectionHeading
-        eyebrow="Research terminal"
-        title="Notes from the prevention frontier"
-        description="The thinking behind JUNO — articles, public-health notes, and field observations on literacy, prevention, and navigation."
+        eyebrow="Research"
+        title="Research notes"
+        description="Articles, public-health notes and field observations behind JUNO’s tools."
       />
 
-      {/* Terminal-style index */}
+      {/* Index */}
       <Reveal className="mt-12">
-        <div className="overflow-hidden rounded-3xl border border-border bg-[#0c1110] text-juno-100 shadow-2xl dark:bg-card">
-          <div className="flex items-center gap-2 border-b border-white/10 px-5 py-3">
-            <span className="h-3 w-3 rounded-full bg-rose-400/80" />
-            <span className="h-3 w-3 rounded-full bg-amber-400/80" />
-            <span className="h-3 w-3 rounded-full bg-juno-400/80" />
-            <span className="ml-3 font-mono text-xs text-white/50">
-              juno@research ~ % ls -la /notes
+        <div className="overflow-hidden rounded-3xl border border-border bg-card">
+          <div className="flex items-center justify-between gap-4 border-b border-border bg-muted/40 px-5 py-3 font-mono text-xs text-muted-foreground">
+            <span>Index</span>
+            <span>
+              {research.length} entries · newest first
             </span>
           </div>
-          <div className="p-5 font-mono text-sm">
-            <p className="text-white/40">
-              # {research.length} entries · sorted by recency
-            </p>
-            <div className="mt-3 space-y-1">
-              {research.map((r) => (
-                <Link
-                  key={r.id}
-                  href={`/research/${r.id}`}
-                  className="group flex flex-wrap items-center gap-x-4 gap-y-1 rounded-lg px-2 py-2 transition hover:bg-white/5"
-                >
-                  <span className="text-white/40">{r.date}</span>
-                  <span className="rounded bg-juno-400/15 px-2 py-0.5 text-[11px] text-juno-300">
-                    {r.kind}
-                  </span>
-                  <span className="font-medium text-white group-hover:text-juno-300">
-                    {r.title}
-                  </span>
-                  <Icons.arrowRight
-                    width={14}
-                    height={14}
-                    className="ml-auto text-white/30 transition group-hover:translate-x-1 group-hover:text-juno-300"
-                  />
-                </Link>
-              ))}
-            </div>
+          <div className="p-3 font-mono text-sm">
+            {research.map((r) => (
+              <Link
+                key={r.id}
+                href={`/research/${r.id}`}
+                className="group flex flex-wrap items-center gap-x-4 gap-y-1 rounded-xl px-3 py-2.5 transition hover:bg-muted/60"
+              >
+                <span className="text-muted-foreground">{r.date}</span>
+                <span className="rounded bg-juno-500/10 px-2 py-0.5 text-[11px] text-juno-700 dark:text-juno-400">
+                  {r.kind}
+                </span>
+                <span className="font-medium text-foreground group-hover:text-juno-700 dark:group-hover:text-juno-400">
+                  {r.title}
+                </span>
+                <Icons.arrowRight
+                  width={14}
+                  height={14}
+                  className="ml-auto hidden text-muted-foreground transition group-hover:translate-x-1 sm:block"
+                />
+              </Link>
+            ))}
           </div>
         </div>
       </Reveal>

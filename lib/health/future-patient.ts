@@ -153,7 +153,7 @@ export function computeFuturePatient(
       note:
         input.smoking === "none"
           ? "Staying smoke-free removes a major risk multiplier."
-          : "Reducing or stopping is the single highest-leverage change here.",
+          : "Reducing or stopping is the single most effective change here.",
     },
     checkup: {
       label: "Checkup habit",
