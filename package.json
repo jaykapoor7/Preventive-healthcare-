@@ -2,7 +2,7 @@
   "name": "juno",
   "version": "1.0.0",
   "private": true,
-  "description": "JUNO — Preventive healthcare and patient literacy platform for India.",
+  "description": "JUNO: preventive health and patient-literacy tools for India.",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
